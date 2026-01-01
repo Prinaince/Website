@@ -69,6 +69,28 @@
         .input-field { width: 100%; background: #000; border: 1px solid var(--border); color: white; padding: 12px; margin-bottom: 15px; border-radius: 10px; outline: none; }
         .input-field:focus { border-color: var(--primary); }
 
+        /* --- Social Media Section Styles --- */
+        .social-container { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }
+        .social-link {
+            display: flex; align-items: center; justify-content: center; gap: 15px;
+            padding: 15px; border-radius: 15px; text-decoration: none;
+            font-size: 1.1rem; font-weight: 600; color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .social-link:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .social-link i { font-size: 1.5rem; }
+        
+        /* Brand Colors */
+        .wa-bg { background: linear-gradient(145deg, #1f2937, #0f172a); border-left: 4px solid #25D366; }
+        .wa-bg i { color: #25D366; }
+        
+        .tg-bg { background: linear-gradient(145deg, #1f2937, #0f172a); border-left: 4px solid #0088cc; }
+        .tg-bg i { color: #0088cc; }
+        
+        .ig-bg { background: linear-gradient(145deg, #1f2937, #0f172a); border-left: 4px solid #E1306C; }
+        .ig-bg i { color: #E1306C; }
+
         /* --- Bottom Navigation Dock --- */
         .dock-container { position: fixed; bottom: 20px; left: 0; right: 0; display: flex; justify-content: center; z-index: 999; }
         .dock {
@@ -150,6 +172,29 @@
                 <textarea name="message" class="input-field" rows="4" placeholder="Your feedback" required></textarea>
                 <button type="submit" class="btn-primary" style="background: #222;">Send Message</button>
             </form>
+        </div>
+    </section>
+
+    <!-- NEW SOCIAL MEDIA SECTION -->
+    <section id="community">
+        <h2 class="section-title">Join Community</h2>
+        <div class="social-container">
+            
+            <!-- WhatsApp Channel Link -->
+            <a href="https://whatsapp.com/channel/0029Vb7prcy6buMHfxPawC3V" target="_blank" class="social-link wa-bg">
+                <i class="fa-brands fa-whatsapp"></i> Join WhatsApp Channel
+            </a>
+
+            <!-- Telegram Channel Link -->
+            <a href="https://t.me/Prinaince_library" target="_blank" class="social-link tg-bg">
+                <i class="fa-brands fa-telegram"></i> Join Telegram Channel
+            </a>
+
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/prince.rajpoot16?igsh=ZHpocnByd2R1Zzhl" target="_blank" class="social-link ig-bg">
+                <i class="fa-brands fa-instagram"></i> Follow on Instagram
+            </a>
+
         </div>
     </section>
 
@@ -250,4 +295,4 @@
         window.onload = loadReviews;
     </script>
 </body>
-</html>
+    </html>
